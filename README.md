@@ -1,6 +1,8 @@
 Ttorrent, a Java implementation of the BitTorrent protocol
 ==========================================================
 
+[![Build Status](https://travis-ci.org/mpetazzoni/ttorrent.png)](https://travis-ci.org/mpetazzoni/ttorrent)
+
 Description
 -----------
 
@@ -64,6 +66,22 @@ The client, tracker and torrent file manipulation utilities will all present a
 usage message on the console when invoked with the ``-h`` command-line flag.
 
 ### As a library
+
+To use ``ttorrent`` is a library in your project, all you need is to
+declare the dependency on the latest version of ``ttorrent``. For
+example, if you use Maven, add the following in your POM's dependencies
+section:
+
+```xml
+  <dependencies>
+    ...
+    <dependency>
+      <groupId>com.turn</groupId>
+      <artifactId>ttorrent</artifactId>
+      <version>1.4</version>
+    </dependency>
+  </dependencies>
+```
 
 *Thanks to Anatoli Vladev for the code examples in #16.*
 
@@ -147,7 +165,7 @@ Authors and contributors
 * Thomas Zink <<thomas.zink@uni-konstanz.de>>  
   Fixed a piece length computation issue when the total torrent size is an
   exact multiple of the piece size.
-* Johan Parent <<parent_johan@yahoo.com>>  
+* Johan Parent <<parent\_johan@yahoo.com>>  
   Fixed a bug in unfresh peer collection and issues on download completion on
   Windows platforms.
 * Dmitriy Dumanskiy  
